@@ -1,36 +1,51 @@
 .App {
   box-sizing: border-box;
   text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 100vh;
 }
 
 .CalcContainer {
-  width: 500px;
-  margin: auto;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #3498db; /* Change to a blue color */
+  color: white; /* Change text color to white */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .CalcDisplay {
-  border: 1px solid #505050;
-  height: 40px;
+  border: 1px solid #ddd;
+  height: 60px;
   font-size: 2em;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   padding: 10px;
   text-align: right;
-  background: gray;
+  background-color: #2980b9; /* Change to a darker blue color */
+  border-radius: 6px;
+  color: white; /* Change text color to white */
 }
 
 .ButtonContainer {
   display: grid;
-  gap: 2px;
+  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.ButtonContainer > button {
-  justify-content: center;
-  border: 1px solid #1C1C1C;
-  font-size: 2em;
-  background-color: yellow;
-
+.CalcButton {
+  border: 1px solid #ccc;
+  font-size: 1.5em;
+  padding: 15px;
+  background-color: #ecf0f1; /* Change to a light gray color */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #333; /* Add color to button text */
 }
 
-
-
+.CalcButton:hover {
+  background-color: #bdc3c7; /* Change to a darker gray color on hover */
+}
